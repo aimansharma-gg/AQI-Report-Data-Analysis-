@@ -16,7 +16,7 @@ Transform: Split data into different air quality day types (e.g., Good, Unhealth
 
 Summarize: Calculate aggregate AQI statistics.
 
-Query: Use SQL to derive insights such as most polluted counties or states with the cleanest air.
+Query: Use SQL to derive insights such as the most polluted counties or states with the cleanest air.
 
 ⚙️ Code Explanation
 1. Data Preprocessing (Python)
@@ -45,9 +45,7 @@ AQI_split_2024.csv: Used for pollution day type queries.
 AQI_stats.csv: Used for maximum and percentile AQI analysis.
 
 🧮 SQL Queries (Sample Insights)
-⚠️ Note: Column names in the SQL queries assume you have renamed them in your DB to be SQL-friendly.
-
-Make sure to align column names between your CSV and SQL environment (e.g., Days with AQI → Days_Collected, etc.)
+⚠️ Note: Column names in the SQL queries were changed to make it easier to handle in an SQL environment.
 
 ✅ Future Improvements
 Automate the SQL column renaming via Python.
